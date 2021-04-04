@@ -14,7 +14,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "user" */ '@/views/user/session.vue'),
     },
     {
-        path: '/s/auth',
+        path: '/s/:sessionId/auth',
         name: 'User auth',
         component: () => import(/* webpackChunkName: "user" */ '@/views/user/user-auth.vue'),
     },
